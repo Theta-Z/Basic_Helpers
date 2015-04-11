@@ -74,6 +74,12 @@ namespace FlyFF_Helper
     {
       if (e.KeyCode == Keys.Oemtilde)
         TildeDown = false;
+
+      if (chkDoubleClickT.Checked && e.KeyCode == Keys.G)
+      {
+        e.Handled = true;
+        WinAPI.Mouse_RightHold(WinAPI.MouseClickStatus.MOUSE_UP);
+      }
     }
 
     /// <summary>
@@ -103,8 +109,28 @@ namespace FlyFF_Helper
         IGNORE = false;
       }
 
+      if (chkDoubleClickT.Checked && e.KeyCode == Keys.T)
+      {
+        WinAPI.Mouse_LeftClick(2);
+        e.Handled = true;
+      }
+
+      if (chkDoubleClickT.Checked && e.KeyCode == Keys.G)
+      {
+        e.Handled = true;
+        WinAPI.Mouse_RightHold(WinAPI.MouseClickStatus.MOUSE_DOWN);
+      }
+
       if (e.KeyCode == Keys.Oemtilde)
         TildeDown = true;
+    }
+
+    private void chkDoubleClickT_CheckedChanged(object sender, EventArgs e)
+    {
+      chkDoubleClickT.Text = 
+        chkDoubleClickT.Checked
+        ? "Double Click T is Currently: ON"
+        : "Double Click T is Currently: OFF";
     }
   }
 }

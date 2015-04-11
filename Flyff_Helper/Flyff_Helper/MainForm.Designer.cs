@@ -32,6 +32,7 @@
       this.btnGetHealerClient = new System.Windows.Forms.Button();
       this.btnGetMainClient = new System.Windows.Forms.Button();
       this.chkToggleStatus = new System.Windows.Forms.CheckBox();
+      this.chkDoubleClickT = new System.Windows.Forms.CheckBox();
       this.SuspendLayout();
       // 
       // btnGetHealerClient
@@ -67,17 +68,29 @@
       this.chkToggleStatus.UseVisualStyleBackColor = true;
       this.chkToggleStatus.CheckedChanged += new System.EventHandler(this.chkToggleStatus_CheckedChanged);
       // 
+      // chkDoubleClickT
+      // 
+      this.chkDoubleClickT.AutoSize = true;
+      this.chkDoubleClickT.Location = new System.Drawing.Point(12, 139);
+      this.chkDoubleClickT.Name = "chkDoubleClickT";
+      this.chkDoubleClickT.Size = new System.Drawing.Size(176, 17);
+      this.chkDoubleClickT.TabIndex = 4;
+      this.chkDoubleClickT.Text = "Double Click T is Currently: OFF";
+      this.chkDoubleClickT.UseVisualStyleBackColor = true;
+      this.chkDoubleClickT.CheckedChanged += new System.EventHandler(this.chkDoubleClickT_CheckedChanged);
+      // 
       // MainForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(204, 139);
+      this.ClientSize = new System.Drawing.Size(204, 155);
+      this.Controls.Add(this.chkDoubleClickT);
       this.Controls.Add(this.chkToggleStatus);
       this.Controls.Add(this.btnGetMainClient);
       this.Controls.Add(this.btnGetHealerClient);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-      this.MaximumSize = new System.Drawing.Size(220, 177);
-      this.MinimumSize = new System.Drawing.Size(220, 177);
+      this.MaximumSize = new System.Drawing.Size(220, 193);
+      this.MinimumSize = new System.Drawing.Size(220, 193);
       this.Name = "MainForm";
       this.Text = "FlyFF Helper";
       this.ResumeLayout(false);
@@ -90,6 +103,7 @@
     private System.Windows.Forms.Button btnGetHealerClient;
     private System.Windows.Forms.Button btnGetMainClient;
     private System.Windows.Forms.CheckBox chkToggleStatus;
+    private System.Windows.Forms.CheckBox chkDoubleClickT;
   }
 }
 
