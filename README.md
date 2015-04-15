@@ -4,7 +4,7 @@ FlyFF Helpers
 
 FlyFF Helper
 ============  
-Don't want the code?:  
+Don't want the code?  
 If you just want to use the newest version of FlyFF Helper:  
  * [Download FlyFF Helper](https://github.com/Theta-Z/Basic_Helpers/blob/master/FlyFF_Helper_Full_Program.zip?raw=true)
  * Extract to desired location.
