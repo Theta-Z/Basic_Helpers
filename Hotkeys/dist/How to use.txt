@@ -1,0 +1,160 @@
+==================
+FIRST THINGS FIRST
+==================
+Right click program > Properties > Compatibility 
+  SELECT RUN PROGRAM AS ADMINISTRATOR AND APPLY
+
+
+=================
+Starting Hotkeyer
+=================
+Call filename with params for your hotkey file.
+hotkeys.hk is the example file, open it with a good editor 
+  [sublime, notepad++, vim, etc]
+e.g.,
+
+[filename = Hotkeyer.exe]
+[hotkey filename = vindictus.hk]
+  from command line:
+    Hotkeyer.exe vindictus.hk
+
+This will run Hotkey.exe with the param filename of vindictus.hk
+
+
+You >>CAN<< put open a standard editor and write the following
+
+@echo off
+Hotkeyer.exe hotkeys.hk
+
+Then save the above 2 lines as "Run Hotkeys.bat"
+This can be used to easily manage multiple hotkey layouts.
+=> multiple batch files to avoid CLI interaction.
+=> Run Hotkeys.bat
+=> Run Vindictus Hotkeys.bat
+=> Run Ark Hotkeys.bat
+-- etc ;; Example batch files and hotkey scripts have been included.
+
+
+=========================
+Making new hotkey scripts
+=========================
+Put multiple hotkey script lines into a single file, and pass it into hotkeyer.exe as explained above.
+
+Examples:
+[Send a left click to the mouse one time, when I press numpad 8]
+  event=mouse; action=left_click; behaviour=once; bind=numpad8; scan=0;
+
+
+[Simulate pressing the "e" key multiple times when I press numpad 9. When I press numpad 9 during this, stop the repitition.]
+  event=keybd; action=e; behaviour=repeat; bind=numpad9; scan=63;
+
+
+[Simulate holding down the left mouse button when I press numpad 3.]
+  event=mouse; action=left_down; behaviour=once; bind=numpad3; scan=0;
+
+
+[Simulate releasing a held down left mouse button when I press numpad 6.]
+  event=mouse; action=left_up; behaviour=once; bind=numpad6; scan=0;
+  
+[Simulate pressing the "L" key once when I press F1]
+  event=keybd; action=l; behaviour=repeat; bind=F1; scan=69;
+
+[Send a message to the focused application to left click multiple times until the bind key is pressed again]
+  event=postmsg; action=left_click; behaviour=repeat; bind=numpad_period; scan=0;
+  ^ Please do not use this unless event=mouse; does not work.
+  ^ This is generally used to force input for directX games e.g., Ark
+=====================================================
+Comprehensive list of supported hotkey script options
+=====================================================
+
+List of supported hotkey params
+CASE SENSITIVE
+mouse != Mouse
+
+
+event:
+  keybd
+  mouse
+  postmsg
+
+
+action:
+  keybd:
+    numpad1
+    numpad2
+    numpad3
+    numpad4
+    numpad5
+    numpad6
+    numpad7
+    numpad8
+    numpad9
+    numpad_minus
+    numpad_plus
+    numpad_period
+    numpad_star
+    numpad_slash
+    F1 to F12
+    alphabet a to z
+    numeric 0 to 9
+    backspace
+    delete
+    grave
+    tab
+    space
+	
+  mouse:
+    right_click
+    right_down
+    right_up
+    left_click
+    left_down
+    left_up
+	
+  postmsg:
+    right_click
+    right_down
+    right_up
+    left_click
+    left_down
+    left_up
+
+
+behaviour:
+  once
+  repeat
+
+
+bind:
+    numpad1
+    numpad2
+    numpad3
+    numpad4
+    numpad5
+    numpad6
+    numpad7
+    numpad8
+    numpad9
+    numpad_minus
+numpad_plus
+    numpad_period
+    numpad_star
+    numpad_slash
+    F1 to F12
+    alphabet a to z
+    numeric 0 to 9
+    backspace
+    delete
+    grave
+    tab
+    space
+
+
+scan:
+  Any int valued 0 to 255
+  (the common value is 69 and will work for most occasiont. 62 and 63 will work for most other occasions.)
+  (backspace specifically needs a value of 14)
+  
+  
+  
+  

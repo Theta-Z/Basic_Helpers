@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo .:::. Compiling Hotkeyer .:::.
+gcc -Wall src/HulkSmash.c src/io/Hulk.c src/io/Glasses.c src/std/Vector.c -o hotkeyer.exe
+
+sleep 1
+
+echo .:::. Moving Hotkeyer to dist .:::.
+mv hotkeyer.exe dist/hotkeyer2.exe
+
+echo .:::. Hotkeyer Creation Complete .:::.

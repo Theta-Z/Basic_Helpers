@@ -1,0 +1,14 @@
+event=mouse; action=left_click; behaviour=once; bind=numpad8; scan=0;
+event=keybd; action=e; behaviour=repeat; bind=numpad9; scan=63;
+event=mouse; action=left_down; behaviour=once; bind=numpad3; scan=0;
+event=mouse; action=left_up; behaviour=once; bind=numpad6; scan=0;
+event=keybd; action=b; behaviour=repeat; bind=numpad_star; scan=69;
+event=keybd; action=c; behaviour=repeat; bind=numpad_period; scan=69;
+event=keybd; action=d; behaviour=repeat; bind=numpad_plus; scan=69;
+event=keybd; action=e; behaviour=repeat; bind=left_arrow; scan=69;
+event=keybd; action=f; behaviour=repeat; bind=tab; scan=69;
+event=keybd; action=g; behaviour=repeat; bind=up_arrow; scan=69;
+event=keybd; action=h; behaviour=repeat; bind=grave; scan=69;
+event=keybd; action=i; behaviour=repeat; bind=numpad_slash; scan=69;
+event=keybd; action=j; behaviour=repeat; bind=delete; scan=69;
+event=keybd; action=k; behaviour=once; bind=F1; scan=69;

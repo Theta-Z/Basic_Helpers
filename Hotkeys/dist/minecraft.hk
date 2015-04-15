@@ -1,0 +1,1 @@
+event=mouse; action=right_click; behaviour=repeat; bind=numpad8; scan=0;

@@ -1,0 +1,2 @@
+event=keybd; action=e; behaviour=repeat; bind=numpad_plus; scan=68;
+event=postmsg; action=left_click; behaviour=repeat; bind=numpad_period; scan=0;

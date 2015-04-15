@@ -1,0 +1,2 @@
+event=keybd; action=space; behaviour=repeat; bind=numpad_plus; scan=66;
+event=mouse; action=left_click; behaviour=repeat; bind=numpad8; scan=0;
