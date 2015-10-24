@@ -5,10 +5,10 @@ FlyFF Helpers
 FlyFF Helper
 ============  
 Don't want the code?:  
-  If you just want to use the newest version of FlyFF Helper:  
-    * Download FlyFF_Helper_Full_Program.zip
-    * Extract to desired location.
-    * Run FlyFF Helper!
+If you just want to use the newest version of FlyFF Helper:  
+ * Download FlyFF_Helper_Full_Program.zip -- https://github.com/Theta-Z/Basic_Helpers/FlyFF_Full_Program.zip?raw=true
+ * Extract to desired location.
+ * Run FlyFF Helper!
 
 Nuget Packages:
  * Install-Package Newtonsoft.Json -Version 6.0.8  
