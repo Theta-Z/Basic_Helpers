@@ -1,7 +1,13 @@
 # Basic_Helpers
 FlyFF Helpers  
+> * Why it exists: FlyFF is a practically dead game, but you need 2 characters to play effectively. This eases the burdon of not having people to play with.
+
 Dekaron Stat/Skill WebHelp  
+> * Why it exists: I wanted to play around with Knockout & also wanted to easily view stat requirements for weapons on Dekaron.
+
 Hotkeyer  
+> * Why it exists: I wanted to play around with C & also wanted to be able to easily define hotkeys (with post and events) in the future without having to make a new hotkeyer each time.
+
 ?? Next project ??
 
 FlyFF Helper
